@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: haskell:8.0.2
+    steps:
+      - checkout
+      - run:
+        name: Build
+        command: ghc Math.hs Math_tests.hs -o Tests
+      - run:
+        name: Tests
+        command: ./Tests
