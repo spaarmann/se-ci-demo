@@ -13,4 +13,6 @@ jobs:
           command: ghc Math.hs Math_tests.hs -o Tests
       - run:
           name: Tests
-          command: ./Tests
+          command: mkdir -p test-results/quickcheck/ && ./Tests --jxml=test-results/quickcheck/results.xml
+      - store_test_results:
+          path: test-results
