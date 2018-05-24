@@ -6,8 +6,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Build
-        command: ghc Math.hs Math_tests.hs -o Tests
+          name: Build
+          command: ghc Math.hs Math_tests.hs -o Tests
       - run:
-        name: Tests
-        command: ./Tests
+          name: Tests
+          command: ./Tests
