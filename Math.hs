@@ -1,9 +1,9 @@
 module Math where
 
-add :: Rational -> Rational -> Rational
+add :: Float -> Float -> Float
 add x y = x + y
 
-sub :: Rational -> Rational -> Rational
+sub :: Float -> Float -> Float
 sub x y = x - y
 
 mult :: Rational -> Rational -> Rational
