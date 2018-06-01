@@ -1,13 +1,13 @@
 module Math where
 
-add :: Rational -> Rational -> Rational
+add :: Float -> Float -> Float
 add x y = x + y
 
-sub :: Rational -> Rational -> Rational
+sub :: Float -> Float -> Float
 sub x y = x - y
 
-mult :: Rational -> Rational -> Rational
+mult :: Float -> Float -> Float
 mult x y = x * y
 
-divide :: Rational -> Rational -> Rational
+divide :: Float -> Float -> Float
 divide x y = x / y
